@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
+            <connections>
+                <outlet property="searchTextfield" destination="qzz-ph-Zat" id="otk-5N-NRP"/>
+                <outlet property="tapSearchBtn" destination="ccg-uP-yhp" id="6eL-n8-rKO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SearchBar" id="iN0-l3-epB" customClass="SearchBar" customModule="BooksApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="472" height="177"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qzz-ph-Zat">
+                    <rect key="frame" x="25" y="77.666666666666671" width="332" height="47"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="0gd-lq-VCs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccg-uP-yhp">
+                    <rect key="frame" x="367" y="77.666666666666671" width="80" height="47"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="UtA-zf-Vda"/>
+                        <constraint firstAttribute="height" constant="47" id="wKJ-l0-WaS"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Search"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ccg-uP-yhp" firstAttribute="leading" secondItem="qzz-ph-Zat" secondAttribute="trailing" constant="10" id="QSI-SX-iae"/>
+                <constraint firstItem="ccg-uP-yhp" firstAttribute="centerY" secondItem="qzz-ph-Zat" secondAttribute="centerY" id="a9i-Uw-5cU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ccg-uP-yhp" secondAttribute="trailing" constant="25" id="obD-RI-Z7V"/>
+                <constraint firstItem="qzz-ph-Zat" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="t2Z-Ng-y0H"/>
+                <constraint firstItem="qzz-ph-Zat" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="zRt-Bb-UwK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="103.81679389312977" y="-12.323943661971832"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

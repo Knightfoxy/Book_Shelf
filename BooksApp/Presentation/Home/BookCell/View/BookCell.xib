@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BookCell" id="gTV-IL-0wX" customClass="BookCell" customModule="BooksApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="210" height="311"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="210" height="311"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LE1-Cb-mcH">
+                        <rect key="frame" x="4" y="5" width="202" height="274"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cYN-lU-yUi">
+                                <rect key="frame" x="0.0" y="0.0" width="202" height="274"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Dp-zn-mVO">
+                                <rect key="frame" x="162" y="10" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="c5e-Od-i6X"/>
+                                    <constraint firstAttribute="width" constant="30" id="d9E-zY-VtO"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="bookmark" catalog="system" symbolScale="small"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default" weight="semibold"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cYN-lU-yUi" firstAttribute="top" secondItem="LE1-Cb-mcH" secondAttribute="top" id="CEg-l3-S55"/>
+                            <constraint firstAttribute="trailing" secondItem="cYN-lU-yUi" secondAttribute="trailing" id="HLu-lp-gyU"/>
+                            <constraint firstItem="9Dp-zn-mVO" firstAttribute="top" secondItem="LE1-Cb-mcH" secondAttribute="top" constant="10" id="LfB-pT-uIN"/>
+                            <constraint firstAttribute="bottom" secondItem="cYN-lU-yUi" secondAttribute="bottom" id="Wgs-Rq-Zph"/>
+                            <constraint firstAttribute="trailing" secondItem="9Dp-zn-mVO" secondAttribute="trailing" constant="10" id="dJg-Qq-QBB"/>
+                            <constraint firstItem="cYN-lU-yUi" firstAttribute="leading" secondItem="LE1-Cb-mcH" secondAttribute="leading" id="p8X-ZX-hPB"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k16-QJ-aDi">
+                        <rect key="frame" x="4" y="287" width="202" height="18"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="LE1-Cb-mcH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="3LE-Mm-wYU"/>
+                <constraint firstAttribute="bottom" secondItem="k16-QJ-aDi" secondAttribute="bottom" constant="6" id="BLa-jU-5IY"/>
+                <constraint firstAttribute="trailing" secondItem="k16-QJ-aDi" secondAttribute="trailing" constant="4" id="Ddk-oc-sXA"/>
+                <constraint firstItem="k16-QJ-aDi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="PWX-wP-Atp"/>
+                <constraint firstAttribute="trailing" secondItem="LE1-Cb-mcH" secondAttribute="trailing" constant="4" id="RW3-IL-gyY"/>
+                <constraint firstItem="k16-QJ-aDi" firstAttribute="top" secondItem="LE1-Cb-mcH" secondAttribute="bottom" constant="8" id="kje-ZZ-1P7"/>
+                <constraint firstItem="LE1-Cb-mcH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="u3r-yw-1je"/>
+            </constraints>
+            <size key="customSize" width="210" height="311"/>
+            <connections>
+                <outlet property="bookTitle" destination="k16-QJ-aDi" id="NML-f2-qtO"/>
+                <outlet property="coverImg" destination="cYN-lU-yUi" id="c1y-zt-fDZ"/>
+                <outlet property="coverImgBg" destination="LE1-Cb-mcH" id="GsH-Wq-kBB"/>
+                <outlet property="likeBtn" destination="9Dp-zn-mVO" id="Ja9-Id-TFn"/>
+            </connections>
+            <point key="canvasLocation" x="244.27480916030532" y="-0.35211267605633806"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
